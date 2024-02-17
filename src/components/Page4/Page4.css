@@ -1,74 +1,91 @@
-
 /* Page4.css */
 .page4 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 90%;
   margin: 40px auto;
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   color: #333;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 3em;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px; /* Set a max-width for large screens */
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;   background: linear-gradient(90deg, #ccb7f7, #8ee9ec);
+}
+
+.page4:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
 }
 
 .page4 .content {
   position: relative;
   text-align: center;
-  max-width: 800px; /* Contain the text for better readability */
+  max-width: 800px;
   margin: auto;
 }
 
+.page4 h1, .page4 h2 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
+
 .page4 h1 {
-  font-size: 2.5rem; /* Increase font size for impact */
-  color: #0056b3; /* A more engaging color */
-  font-weight: 600; /* Medium weight for readability */
+  font-size: 2.5rem;
+  color: #0056b3;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .page4 .highlight {
-  background-color: #ffcc00;
-  color: #333; /* Ensure text color contrasts well with the highlight */
+  background-color: white;
+  color: #333;
   padding: 1rem;
   display: inline-block;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1); /* Default scale */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+}
+
+.page4 .highlight:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page4 .f2-fintech, .page4 .investment {
+  font-weight: bold;
 }
 
 .page4 .f2-fintech {
-  font-weight: bold;
-  color: #d64a4a; /* Use a color that stands out for the brand name */
+  color: #2705e9;
 }
 
 .page4 .investment {
-  font-weight: bold;
-  color: #28a745; /* A color that represents money/growth */
-}
-
-.page4 h2 {
-  font-size: 1.75rem;
-  color: #0056b3;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  color: #28a745;
 }
 
 .page4 p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #555; /* Softer color for the body text */
+  color: black;
 }
 
 .page4 .illustration1 {
-  height: auto; /* Allow the image to define the height */
-  margin-top: 2rem; /* Space between text and illustration */
-  background: url('C:\Users\NBU\Desktop\financialadvisory\src\components\Page4\pic2.png') no-repeat center center;
-  background-size: contain;
+  width: 50%; /* Ensure the image is responsive */
+ 
+ 
+  margin-top: 2rem;
+ 
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto;
+  max-width: 80%;
+  background-color: white;
+  
+
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

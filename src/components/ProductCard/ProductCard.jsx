@@ -21,10 +21,10 @@ const ProductCard = ({ title, price, features, id, isPopular, upiId }) => {
         <div className="card-header">
           <span className="card-id">#{id}</span>
           {isPopular && <span className="card-popularity">Most Popular</span>}
-          <h2>{title}</h2>
+          <h2 className='title'>{title}</h2>
           <p className="price">{price}</p>
         </div>
-        <ul className="features">
+        <ul className="features1">
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}

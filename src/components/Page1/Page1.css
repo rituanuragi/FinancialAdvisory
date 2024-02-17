@@ -1,136 +1,127 @@
-/* FintechPurpose.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* General container styles */
-
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+  overflow-inline: hidden;
+  
+}
+
 .container {
   display: flex;
-  justify-content: center; /* Centers children */
-  align-items: flex-start; /* Aligns children at the start */
+  justify-content: space-between; /* Adjusted for better spacing */
+  align-items: flex-start;
   padding: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 85vh;
+  position: relative; /* Position relative for absolute children */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+  height: 100vh;
   width: 100%;
+  background: linear-gradient(90deg, #cfc7df, #8ee9ec);
   
+
 }
 
-
-/* Text section styles */
 .textSection {
-  flex: 1; /* Takes up only the necessary space */
-  padding-right: 2rem; /* Adds spacing between text and image */
+  max-width: 60%; /* Limiting text section width for better layout */
+  padding: 2rem;
+  
 }
 
-/* Header styles */
 .textSection h1 {
-  margin-bottom: 2rem; /* Increases space below the h1 */
+  margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #245464;
-  text-align: left; /* Aligns text to the left */
+  font-weight: 700;
+  color: #003366; /* Darker blue for contrast */
   text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
 }
+
 .text {
-  font-size: 1.5rem; /* Adjust the font size to suit your design */
-  text-align: left; /* Align the text to the left */
-  margin: 1rem 0; /* Add some top and bottom margin for spacing */
-  color: #333; /* Set a default text color, choose something that fits your theme */
-  line-height: 1.6; /* Adjust line height for better readability */
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem; /* More space after paragraphs */
+  background: linear-gradient(90deg, #ccb7f7, #8ee9ec);
 }
 
-.highlight3 {
-  color: #0077CC; /* A color for 'F2 Fintech', a shade of blue */
-  font-weight: bold; /* Make 'F2 Fintech' bold */
+.highlight3, .highlight1, .prosperity {
+  font-weight: 700; /* Consistent bold weight */
 }
 
-.highlight2 {
-  color: #555; /* A subtle change from the default text color for contrast */
-  
-}
-
-/* Specific color for 'prosperity' to make it stand out */
 .prosperity {
-  color: #24A47E; /* A color for 'prosperity', a shade of green */
-  font-weight: bold; /* Make 'prosperity' bold */
+  color: #27AE60; /* A fresh green for the prosperity keyword */
 }
 
-
-/* Style for the bullet points container */
 .bulletPoints {
-  padding: 0; /* Removes default padding */
-  list-style: none; /* Removes default list-style */
-  max-width: 600px; /* Adjust the max-width as per your layout */
-  margin: 2rem auto; /* Center the list with margin and add space around */
- 
-  margin-left: 20px;
+  list-style: none;
+  padding-left: 0; /* Remove padding */
 }
 
-/* Style for each list item */
 .listItem {
-  background: #f9f9f9; /* Light background for each item */
-  border-left: 5px solid #0077CC; /* A blue accent on the left */
-  margin-bottom: 1rem; /* Space between items */
-  padding: 0.5rem 1rem; /* Padding inside each item */
-  border-radius: 5px; /* Rounded corners */
-  display: flex; /* Flex layout for aligning the checkmark and text */
-  align-items: center; /* Center the items vertically */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  background: #ffffff;
+  border-left: 4px solid #27AE60; /* Green to match the prosperity keyword */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px; /* Softer radius */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for each list item */
+  transition: all 0.2s ease-in-out;
+}
+
+.listItem:hover {
  
 }
 
-/* Style for the checkmark */
-.listItemBefore {
-  color: #4CAF50; /* Green color for checkmark */
-  font-size: 1.5rem; /* Larger checkmark */
-  margin-right: 0.5rem; /* Space between checkmark and text */
-}
-
-/* Style for the highlighted text within each item */
-.highlight1 {
-  color: #0056b3; /* Blue color for highlighted text */
-  font-weight: bold; /* Bold font for emphasis */
-}
-
-/* Hover effect for list items */
-.listItem:hover {
-  background: #e6f7ff; /* Lighter background on hover */
-  border-left-color: #0056b3; /* Darker blue accent on hover */
-  transform: translateX(10px); /* Slight right movement on hover */
-}
-
-/* Add media query for responsiveness */
-@media (max-width: 768px) {
-  .bulletPoints {
-    margin: 3rem; /* Less margin on smaller screens */
-  }
-}
-
-/* Container for the image */
 .imageSection {
-  width: 30%; /* Set the width of the container for the image */
-  position: absolute; /* Position it absolutely relative to its positioned parent */
-  top: 45%; /* Start at the vertical center of the container */
-  right: 0; /* Align to the right side */
-  transform: translateY(-50%); /* Adjust vertically to truly center it */
+  width: 40%;
+  /*Adjustedwidth*/position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
-/* Style for the image itself */
 .image {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Keep the aspect ratio of the image */
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Rounded corners for the image */
+ 
 }
-/* Positioning the card to appear below the image section */
+
 .card1 {
-  position: absolute; /* Position the card absolutely within its parent container */
-  left: 70%; /* Starting from the left, push the card to 70% of the parent container's width */
-  bottom: 5%; /* Position the card below the image section */
-  color: #245464; /* Text color for the card content */
-  
+  background: #F1F1F1; /* Light background for card */
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 2rem; /* More space from the left */
+  bottom: 2rem; /* More space from the bottom */
+  transition: all 0.3s ease-in-out;
+  width: auto; /* Auto width based on content */
+}
+
+.card1:hover {
+  background: #e6f7ff; /* Light blue background on hover */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px); /* Subtle lift effect */
+}
+
+@media (max-width: 768px) {
+  .textSection {
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  .imageSection {
+    width: 50%; /* Adjust image section on small screens */
+    position: static; /* Static position for better layout on small screens */
+    transform: none;
+  }
 }

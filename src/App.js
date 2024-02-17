@@ -33,7 +33,7 @@ const products = [
       "✓ For individuals looking for lending solutions",
       "✓ Eligibility Check Form Multiple Lenders",
       "✓ Persoalized Lending Solutions",
-      "Free live sessions",
+      "1 Free live sessions",
       "✓ One Year Relationship Management (RM) Support"
     ],
     isPopular: false,
@@ -47,7 +47,7 @@ const products = [
       "✓ F2 Financial Advisory ",
       "✓ Personalized Loan Solutions",
       "✓ Team Sheet For Easy Comparison",
-      "Free live sessions",
+      "✓ 1 Free live sessions",
       "✓ 1 Year RM Support"
     ],
     isPopular: false,
@@ -95,7 +95,7 @@ function App() {
       
       <Page3 />
       <br />
-      <Page4 />
+     <Page4/>
       <br />
       {/* <Page5 /> */}
       {/* <Page6 /> */}
@@ -103,19 +103,21 @@ function App() {
       <Page7 />
       <br/>
       {/* <Page8 /> */}
-      <div className="card-container">
-        {products.map(product => (
-          <ProductCard
-            key={product.id}
-            id={product.id}
-            title={product.title}
-            price={product.price}
-            features={product.features}
-            isPopular={product.isPopular}
-            upiId={product.upiId}
-          />
-        ))}
-      </div>
+     <div className="card-container">
+  {/* Map through your product data to render each ProductCard */}
+  {products.map((product) => (
+    <ProductCard
+      key={product.id}
+      title={product.title}
+      price={product.price}
+      features={product.features}
+      id={product.id}
+      isPopular={product.isPopular}
+      upiId={product.upiId}
+    />
+  ))}
+</div>
+
     </div>
   );
 }

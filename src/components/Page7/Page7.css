@@ -1,4 +1,7 @@
 /* Page7.css */
+*{
+  font-family: 'Open Sans', sans-serif;
+}
 .loan-container {
   display: flex;
   flex-direction: row;
@@ -11,6 +14,7 @@
   max-width: 960px;
   font-family: 'Arial', sans-serif;
   transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #ccb7f7, #8ee9ec);
   /* background-color: #80ced6;; */
 }
 
@@ -54,6 +58,7 @@
   font-size: 1.75rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  font-weight: 900;
 }
 
 .loan-body-content p,
@@ -66,7 +71,7 @@
 }
 
 .loan-more-info {
-  background: linear-gradient(to right, #eef2f3, #f4f4f4);
+  background: white;
   padding: 1.5rem;
   border-radius: 12px;
   margin: 1rem 0;
@@ -74,7 +79,7 @@
 }
 
 .loan-footer {
-  background-color: #dde1e3;
+  background-color: white;
   padding: 1.5rem;
   border-radius: 12px;
   margin-top: 1rem;

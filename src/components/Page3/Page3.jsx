@@ -14,17 +14,17 @@ function Page3() {
            Empowering Dreams and Enhancing Lives.
         </p>
       </div>
-      <div className="features">
+      <div className="features2">
         <h3>Additional Features Across All Plans:</h3>
-        <div className="feature">
+        <div className="feature2">
           <strong>Fee charged only after a successful loan disbursal</strong>
           <p>We believe in your success – our fee structure aligns our interests with yours, we only charge fee if your loan is disbursed.</p>
         </div>
-        <div className="feature">
+        <div className="feature2">
           <strong>No More Loan Rejections</strong>
           <p>Talk to us before you get turned down for a loan. We can spot problems early and keep your loan plans going smoothly. <span className="icon"> 🛡️</span></p>
         </div>
-        <div className="feature">
+        <div className="feature2">
           <strong>Make Your Credit Score Higher</strong>
           <p>We give you a simple plan to make your credit score better. Our team works with you to make your credit strong. <span className="icon">📈</span></p>
         </div>

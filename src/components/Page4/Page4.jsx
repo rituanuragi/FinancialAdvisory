@@ -1,6 +1,6 @@
 import React from 'react';
 import './Page4.css';
-
+import pic2 from './pic2.png'
 function Page4() {
   return (
     <div className="page4">
@@ -14,10 +14,12 @@ function Page4() {
           More than a fee, it's a commitment to value. Charging ₹1 for our financial advisory symbolizes its importance. This token amount signifies your investment in informed decision-making and reminds you that our affordable advice is backed by dedicated expertise.
         </p>
         <div className="illustration1">
-          {/* Insert your illustration image here */}
+         <img src={pic2} alt="Finance Illustration" style={{ maxWidth: '300px', width: '100%', height: 'auto', marginTop: '2rem', marginBottom: '1rem', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+</div>
+
         </div>
       </div>
-    </div>
+   
   );
 }
 
